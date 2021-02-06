@@ -1,0 +1,391 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body {
+ /* プロジェクトによって変動 */
+ min-width: 1000px;
+ color: #000;
+ line-height: 1.6;
+ font-weight: 400;
+ font-family: 'メイリオ', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+
+ width: 100%;
+
+ font-variant-numeric: tabular-nums;
+ /* safari hover対策 */
+ -webkit-font-smoothing: antialiased;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+ul, ol {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ vertical-align:baseline;
+ text-decoration: none;
+ color: inherit;
+ display: inline-block;
+}
+
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000;
+ font-style:italic;
+ font-weight:bold;
+}
+
+del {
+ text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0;
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+
+input, select {
+ vertical-align:middle;
+}
+
+img {
+ vertical-align: bottom;
+ line-height: 1.0;
+}
+
+button {
+ line-height: 1.0;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ outline: none;
+ padding: 0;
+ appearance: none;
+}
+.header-inner{
+  max-width: 1100px;
+  margin: 10px auto;
+  display: flex;
+}
+.header-left{
+  width: 230px;
+  height: auto;
+}
+.header-right{
+margin-left: auto;
+margin-right: 0px;
+display: flex;
+}
+.search_bar{
+    display: flex; /*アイコン、テキストボックスを調整する*/
+    align-items: center; /*アイコン、テキストボックスを縦方向の中心に*/
+    justify-content: center; /*アイコン、テキストボックスを横方向の中心に*/
+    height: 50px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.search_icon{ /*アイコンに一定のスペースを設ける*/
+    height: 15px;
+    width: 15px;
+    padding: 5px 5px;
+}
+
+#text2{
+    font-size: 16px;
+    width: 100%; /*flexの中で100%広げる*/
+    background-color: #ddd;
+    border: none; /*枠線非表示*/
+    outline: none; /*フォーカス時の枠線非表示*/
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+}
+.group{
+  margin-right: 15px;
+}
+.login-title{
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regster{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*===================
+#header
+======================*/
+/*===================
+# main
+======================*/
+.main{
+  margin-top: 40px;
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto 10px;
+  overflow: hidden;
+
+}
+/*===================
+# left-side
+======================*/
+.left-side{
+  width: 12.4545%;
+  border:solid 5px #dcdddf;
+  height:100%;
+  margin-right: 20px;
+  
+}
+.left-side-inner{
+  padding: 10px;
+}
+.left-side-title span{
+font-size: 13px;
+color: #ffb819;
+margin-right: 5px;
+vertical-align: middle;
+}
+.left-side-title {
+font-size: 18px;
+}
+.left-side-menu li{
+  font-size: 13px;
+}
+
+.left-side-menu li{
+  margin-top: 20px;
+}
+.left-side-menu li:first-child {
+  margin-top: 10px;
+}
+/*===================
+# post
+======================*/
+.post{
+  width: 63.909%;
+}
+.post-title{
+  width: 100%;
+  background: #ffd59a;
+  display: flex;
+  align-items: center; /*アイコン、テキストボックスを縦方向の中心に*/
+}
+.post-square{
+    background: #ffb81a;
+    width: 10px;
+    height: 20px;
+    margin-top: -18px;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.post-square span{
+    position: absolute;
+    font-size: 10px;
+    left: -18%;
+    top: 15%;
+    color: #fff;
+}
+/*===================
+# right-side
+======================*/
+.right-side{
+  width: 23.636%;
+  margin-left: 20px;
+  padding-bottom: 32768px;
+	margin-bottom: -32768px;
+
+}
+.right-side-welcome{
+  background-color: #dae0e6;
+}
+.right-side-welcome-inner{
+  padding:10px;
+}
+.right-side-welcome-image{
+  margin: 0 auto;
+  text-align: center;
+}
+.right-side-welcome-image img{
+ width: 120px;
+}
+.right-side-welcome-content{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.right-side-new{
+  margin-top: 20px;
+  background: #f6b562;
+}
+.right-side-new-inner{
+  padding:35px 10px;
+}
+.right-side-new-inner h2{
+color: #fff;
+font-size: 24px;
+text-align: center;
+}
+/*===================
+# form
+======================*/
+form{
+  margin-top: 40px;
+  font-weight: bold;
+}
+.item{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.label{
+  float: left;
+  margin-right: 20px;
+  width:135px;
+  padding-left: 10px;
+}
+.inputs{
+  float: left;
+  width:479px;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding:10px;
+  font-size: 15px;
+  background: #f9f9f9;
+}
+textarea{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding: 10px;
+  height: 160px;
+  font-size: 15px;
+  background: #f9f9f9;
+   resize: none;
+}
+.label-content{
+margin-top: 75px;
+}
+.btn-area{
+  text-align: center;
+}
+input[type="submit"]{
+  background:  #ffb81a;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 40px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+/*===================
+# list
+======================*/
+.list{
+  margin-top: 75px;
+}
+.list-title{
+  font-size: 36px;
+  text-align: center;
+}
+.list-contents{
+  margin-top: 45px;
+}
+.list-content{
+  background: #efefed;
+  padding: 30px;
+}
+/*===================
+# login
+======================*/
+.login{
+ width: 63.909%;
+ background: #dae0e6;
+ position: relative;
+ height: auto;
+}
+.login-inner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+}
+.login-inner h2{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-inner input[type="text"],input[type="email"],input[type="password"]{
+margin-bottom: 10px;
+width: 100%;
+}
+.submit{
+  text-align: center;
+}
